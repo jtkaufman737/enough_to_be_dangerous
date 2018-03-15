@@ -1,10 +1,22 @@
+{% load staticfiles %}
 <html>
-  <h1>Posts</h1>
-  {% for post in posts %}
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  <div class="headline"><img src="https://i.imgur.com/ie7DlOS.png"/><br/>
+    enough to be dangerous
+  </div>
+  <br/>
   <div class="content">
-    <h1> published: {{ post.published_date }}</h1>
+  {% for post in posts %}
+   <div class="post">
     <h1><a href="">{{ post.title }}</a></h1>
+    <h5> published: {{ post.published_date }}</h5>
     <p>{{ post.text|linebreaksbr }}</p>
   </div>
   {% endfor %}
+</div>
+</body>
 </html>
