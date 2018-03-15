@@ -7,13 +7,14 @@ html{
 body{
 	margin:10%;
 	align-content:center;
-	width:90%;
+	max-width:90%;
 
 }
 
 p,li,th,tr{
 	font-family: 'Poiret One', cursive;
 	font-size:1.5rem;
+	overflow:scroll;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -31,4 +32,8 @@ h1,h2,h3,h4,h5,h6{
 
 .headline img{
 	height:20%;
+}
+
+.post{
+	max-width: 80%;
 }
