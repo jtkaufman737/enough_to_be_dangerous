@@ -1,0 +1,28 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+certifi = "==2018.1.18"
+dj-database-url = "==0.5.0"
+django = "==1.11.11"
+gunicorn = "==19.7.1"
+pipenv = "==11.8.0"
+pytz = "==2018.3"
+virtualenv = "==15.1.0"
+virtualenv-clone = "==0.3.0"
+whitenoise = "*"
+"psycopg2" = "==2.7.2"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.6"
