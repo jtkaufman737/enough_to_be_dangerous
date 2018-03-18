@@ -1,13 +1,17 @@
 /* basic html */
 
 html{
-
+ /* background-color:#312db5; */
 }
 
 body{
 	margin:10%;
 	align-content:center;
 	max-width:90%;
+	background-color:white;
+	height:100% !important;
+	align-self: center;
+	align-content: center;
 
 }
 
