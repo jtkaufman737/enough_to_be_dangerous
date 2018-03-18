@@ -8,18 +8,27 @@
   <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div class="headline"><img src="https://i.imgur.com/ie7DlOS.png"/><br/>
     enough to be dangerous
   </div>
   <br/>
   <div class="content">
-    
+
    <div class="post">
   {% for post in posts %}
    <div class="post">
     <h1><a href="">{{ post.title }}</a></h1>
     <h5> published: {{ post.published_date }}</h5>
     <p>{{ post.text|linebreaksbr }}</p>
+    <div class="fb-comments" data-href="https://enough-to-be-dangerous.herokuapp.com/" data-numposts="5"></div>
   </div>
    {% endfor %}
 </div>
