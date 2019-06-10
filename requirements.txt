@@ -1,10 +1,11 @@
+-i https://pypi.python.org/simple/
 certifi==2018.1.18
 dj-database-url==0.5.0
-Django==1.11.11
+django==1.11.21
 gunicorn==19.7.1
 pipenv==11.8.0
-pytz==2018.3
-virtualenv==15.1.0
-virtualenv-clone==0.3.0
-whitenoise==3.3.1
 psycopg2==2.7.2
+pytz==2018.3
+virtualenv-clone==0.3.0
+virtualenv==15.1.0
+whitenoise==3.3.1
