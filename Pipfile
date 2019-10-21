@@ -9,7 +9,7 @@ name = "pypi"
 
 certifi = "==2018.1.18"
 dj-database-url = "==0.5.0"
-django = "==1.11.11"
+django = "==1.11.23"
 gunicorn = "==19.7.1"
 pipenv = "==11.8.0"
 pytz = "==2018.3"
